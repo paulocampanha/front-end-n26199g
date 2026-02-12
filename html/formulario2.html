@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Aluno</title>
+    </head>
+    <body>
+        <h1>Senai Celso Charuri</h1>
+        <h2>Cadastro de Aluno</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="nome">Nome Completo*</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
+            </p>
+            <p>
+                <label for="confima-senha">Confirmação de senha</label>
+                <input type="password" id="confirma-senha" name="confirma-senha">
+            </p>
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade">
+            </p>
+            <p>
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </p>
+            <p>
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular">
+            </p>
+            <p>
+                <label>Gênero</label><br>
+                <input type="radio" id="masc" name="genero" value="M">
+                <label for="masc">Masculino</label><br>
+                <input type="radio" id="fem" name="genero" value="F" checked>
+                <label for="fem">Feminino</label><br>
+                <input type="radio" id="ind" name="genero" value="I">
+                <label for="ind">Não informado</label>
+            </p>
+            <p>
+                <label>Cursos de Interesse</label><br>
+                <input type="checkbox" id="java" name="java" value="Java">
+                <label for="java">Java Fundamentals</label><br>
+                <input type="checkbox" id="python" name="python" value="Python">
+                <label for="python">Fundamentos do Python I</label><br>
+                <input type="checkbox" id="dev-font-end" name="de-front-end" 
+                    value="Desenvolvedor Front-end">
+                <label for="dev-front-end">Desenvolvedor Front-end</label><br>
+                <input type="checkbox" id="pbi" name="pbi" value="Power BI">
+                <label for="pbi">Power BI</label>
+            </p>
+            <p>
+                <label for="cidade">Cidade onde mora</label>
+                <select id="cidade" name="cidade">
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Guarulhos">Guarulhos</option>
+                    <option value="Arujá">Arujá</option>
+                    <option value="Mairiporã">Mairiporã</option>
+                </select>
+            </p>
+            <p>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40">
+
+                </textarea>
+            </p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar campos</button>
+
+        </form>
+    </body>
+</html>
