@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Produtos</title>
+    </head>
+    <body>
+        <h1>Cadastro de Produto</h1>
+        <form action="#" method="post">
+            <p>
+                <label for="nome_produto">Nome Produto</label>
+                <input type="text" id="nome_produto" name="nome_produto" required>
+            </p>
+            <p>
+                <label for="embalagem_produto">Embalagem</label>
+                <input type="text" id="embalagem_produto" name="embalagem_produto">
+            </p>
+            <p>
+                <label for="quantidade">Quantidade em Estoque</label>
+                <input type="number" id="quantidade" name="quantidade" min="0">
+            </p>
+            <p>
+                <label>Categoria</label><br>
+
+                <input type="radio" id="eletronico" name="categoria" checked>
+                <label for="eletronico">Eletrônico</label><br>
+
+                <input type="radio" id="embalagem" name="categoria">
+                <label for="embalagem">Embalagem</label><br>
+                
+                <input type="radio" id="limpeza" name="categoria">
+                <label for="limpeza">Limpeza</label><br>
+
+                <input type="radio" id="cosmeticos" name="categoria">
+                <label for="cosmeticos">Cosméticos</label><br>
+
+                <input type="radio" id="bebidas" name="categoria">
+                <label for="bebidas">Bebidas</label><br>
+            </p>
+            <p>
+                <label>Lojas com estoque</label><br>
+
+                <input type="checkbox" id="guarulhos" name="guarulhos">
+                <label for="guarulhos">Guarulhos</label><br>
+
+                <input type="checkbox" id="itaquaquecetuba" name="itaquaquecetuba">
+                <label for="itaquaquecetuba">Itaquaquecetuba</label><br>
+
+                <input type="checkbox" id="poa" name="poa">
+                <label for="poa">Poá</label><br>
+
+                <input type="checkbox" id="suzano" name="suzano">
+                <label for="suzano">Suzano</label><br>
+
+                <input type="checkbox" id="aruja" name="aruja">
+                <label for="aruja">Arujá</label><br>
+
+                <input type="checkbox" id="santa_isabel" name="santa_isabel">
+                <label for="santa_isabel">Santa Isabel</label><br>
+            </p>
+            <p>
+                <label for="ultima_compra">Última data de compra</label>
+                <input type="date" id="ultima_compra" name="ultima_compra">
+            </p>
+
+            <input type="submit" value="Cadastrar Produto">
+            
+        </form>
+    </body>
+</html>
