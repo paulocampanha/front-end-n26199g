@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+
+body { 
+    background-color: chocolate;
+    margin: 50px;
+}
+
+h1 {
+    color:cornsilk;
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+    padding: 20px;
+    background-color: aqua;
+}
+
+h2 {
+    color:aquamarine;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+}
+
+p {
+    color:aliceblue;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 2px;
+    background-color:blue;
+}
