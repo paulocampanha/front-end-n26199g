@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 50px;
+    background-color: darkmagenta;
+    color:rgb(21, 223, 85);
+}
+
+.titulo-geral {
+    color:burlywood;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+.subtitulo-caes {
+    color:cornflowerblue;
+    font-family: 'Arial Black';
+}
+.texto-caes{
+    color:blue;
+    font-family: 'Verdana';
+    background-color: bisque;
+    padding: 10px;
+}
+.subtitulo-gatos {
+    color:crimson;
+    font-family: 'Georgia';
+}
+
+.texto-gatos {
+    color:coral;
+    font-family: 'Courier New';
+    background-color: brown;
+    padding: 15px;
+}
+

@@ -1,0 +1,38 @@
+/* Seletores por ID: usam o simbolo '#' seguido pelo nome do ID */
+* {
+    margin: 0; /* reseta o navegador */
+    padding:0;
+}
+
+body {
+    margin: 20px;
+    background-color: dimgrey;
+}
+
+#titulo-principal {
+    color:beige;
+    font-family: 'Trebuchet MS';
+    font-size: 70px;
+    padding: 10px 0;
+}
+
+#subtitulo-tecnologia {
+    color:azure;
+    font-family: 'Verdana';
+    padding: 0 0 10px 0
+}
+
+#bloco-html {
+    color:chartreuse;
+    font-family: 'Courier New';
+}
+
+#bloco-css {
+    color:coral;
+    font-family: 'Arial';
+}
+
+#bloco-js {
+    color: darksalmon;
+    font-family: 'Tahoma';
+}
