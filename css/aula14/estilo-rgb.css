@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(240, 240, 240);
+    color: rgb(30,30,30);
+    margin: 15px;
+}
+
+.container-topo {
+    background-color: rgb(20, 40, 80);
+    color: rgb(255,255,255);
+    padding: 30px;
+    text-align: center;
+}
+
+.painel-principal {
+    padding: 40px 20px;
+    background-color: rgb(225, 225, 225);
+    margin: 20px 30px;
+    color: rgb(80, 40, 20);
+}
+
+.cartao-alerta {
+    /* Vermelho intenso com 20% de opacidade */
+    background-color: rgba(231, 76, 60, 0.2);
+    /* Texto em vermelho puro para contraste */
+    color: rgb(231, 76, 60);
+    padding: 20px;
+    border: 2px solid rgb(231, 76, 60);
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+
+.cartao-sucesso {
+    /* Verde Esmeralda: Mistura de Verde predominante */
+    background-color: rgb(39, 174, 96); 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container-base {
+    background-color: rgb(50, 50, 50);
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
