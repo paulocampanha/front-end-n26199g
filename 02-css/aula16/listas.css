@@ -1,0 +1,53 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Lista circulo preenchido*/
+ul.lista-disco {
+    list-style-type: disc;
+    color:blue;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+/* Lista círculo não preenchido*/
+ul.lista-circulo {
+    list-style-type: circle;
+    color:blueviolet;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Lista quadrado preenchido*/
+ul.lista-quadrado {
+    list-style-type: square;
+    color:chocolate;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Lista vazia*/
+ul.lista-nenhuma {
+    list-style-type: none;
+    color:crimson;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ol.lista-decimal {
+    list-style-type: decimal;
+}
+
+ol.lista-romanos {
+    list-style-type: upper-roman;
+}
+
+ol.lista-alfabeto {
+    list-style-type: lower-alpha;
+}
+
+ol.lista-zero {
+    list-style-type: decimal-leading-zero;
+}

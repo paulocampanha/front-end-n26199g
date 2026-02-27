@@ -1,0 +1,46 @@
+body {
+    font-family: "Bree Serif", serif;
+    background-color: #f4f7f6;
+}
+
+.conteudo {
+    width: 700px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.autor {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem; 
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.manchete {
+    font: oblique bold 1rem Arial, sans-serif;
+    text-align: center;
+    text-decoration:overline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.noticia {
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.7;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+
+}
+
+.noticia a {
+    text-decoration: none;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}

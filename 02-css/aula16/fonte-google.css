@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fdfaf6;
+    color: #443c35;
+    line-height: 1.6;
+}
+
+.cafe {
+    background-color: #3e2723;
+    color: #d7ccc8;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #3e2723;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d7ccc8;
+    color: #3e2723;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
