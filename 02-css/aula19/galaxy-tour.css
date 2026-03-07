@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a237e;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #3949ab;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a237e;
+}
+
+.cartao {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cartao h2 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1a237e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #3949ab;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a237e;
+    color: #fff;
+}

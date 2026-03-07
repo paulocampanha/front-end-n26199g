@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffe4c4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;   /*Elimina o espaço entre as bordas da celula */
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: #fff
+}
+
+/*Aplica uma cor de fundo nas linhas (tr) pares (even) dentro do corpo (tbody)*/
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d1ecf1;
+    cursor: pointer;
+}
+
+.status-aprovado {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-reprovado {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.status-recuperacao {
+    color:#6495ed;
+    font-weight: bold;
+}
+
+h1 {
+    color:#2980b9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #8e44ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tfoot td {
+    background-color: #f8f9fa;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.obs-tabela {
+    text-align: center;
+}
