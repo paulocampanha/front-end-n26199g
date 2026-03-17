@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;   /*Transforma a classe em Flex Container*/
+    flex-direction: row;  /*Organiza os itens em linha*/
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+.item {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #34495e;
+    border-radius: 5px;
+
+}

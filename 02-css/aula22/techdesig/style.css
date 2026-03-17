@@ -117,6 +117,9 @@ h1 {
 }
 
 /*=================== Estilo das Paginas de Produto ================*/
+.container-central {
+    margin-bottom: 50px;
+}
 .card-topo {
     display: flex;
     align-items: center;
@@ -129,7 +132,7 @@ h1 {
 
 .card-topo h1 {
     flex: 1;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #2c3e50;
     text-align: left;
 }
@@ -150,7 +153,7 @@ h1 {
 
 .selo-desconto {
     position: absolute;
-    top: 15px;
+    top: -10px;
     right: 15px;
     background-color: #e74c3c;
     color: #fff;
@@ -164,3 +167,48 @@ h1 {
 .card-corpo {
     padding: 25px;
 }
+
+.card-corpo h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.lista-especial {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lista-especial li {
+    font-size: 1.2rem;
+    background-color: #ecf0f1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color:#34495e
+}
+
+.preco-container {
+    margin-bottom: 20px;
+}
+
+.preco-antigo {
+    display: block;
+    text-decoration: line-through;
+    color: #6b6e70;
+    font-size: 1.5rem;
+}
+
+.preco-atual {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+

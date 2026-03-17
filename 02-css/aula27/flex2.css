@@ -1,0 +1,14 @@
+.lista-recursos {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;    /*Cria um espaço entre os itens na vertical */
+    width: 300px;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.box {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+}

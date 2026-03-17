@@ -1,0 +1,7 @@
+.box-pai {
+    background-color: #ecf0f1;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
