@@ -243,4 +243,12 @@ footer .redes img:hover {
     transform: scale(1.2);   /* Efeito de aumento suave ao passar o mouse */
 }
 
-
+footer .rodape {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeckAcademy - Matrícula</title>
+    <link rel="stylesheet" href="formulario1.css">
+</head>
+<body>
+    <header>
+        <h1>TechAcademy</h1>
+        <p>Formando os lideres da tecnologia</p>
+    </header>
+
+    <main class="container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados do Aluno</legend>
+
+                <div class="campo-grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Ex: João da Silva">
+                </div>
+
+                <div class="nasc">
+                    <div class="campo-grupo idade">
+                        <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+                    <div class="campo-grupo nascimento">
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="telefone">Telefone de Contato:</label>
+                    <input type="tel" name="telefone" id="telefone" 
+                    placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="responsavel">Nome do responsável (se menor)</label>
+                    <input type="text" name="responsavel" id="resposnavel" 
+                    placeholder="Nome do pai, mãe ou tutor">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cursos Disponíveis</legend>
+
+                <div class="campo-grupo">
+                    <label for="cursos">Cursos</label>
+                    <select name="cursos" id="cursos">
+                        <option value="">Selecione um curso</option>
+                        <option value="java-foundations">Java Foundations</option>
+                        <option value="fundamentos-python">Fundamentos do Python</option>
+                        <option value="front-end">Desenvolvedor Front-end</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="periodo">Período de Estudo</label>
+                    <div class="opcoes-grupo">
+                        <label class="item-opcao" for="manha">
+                            <input type="radio" name="periodo" id="periodo" value="manha"> Manhã
+                        </label>
+                        <label class="item-opcao" for="tarde">
+                            <input type="radio" name="periodo" id="periodo" value="tarde"> Tarde
+                        </label>
+                        <label class="item-opcao" for="noite">
+                            <input type="radio" name="periodo" id="periodo" value="noite" checked> Noite
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cursos já concluídos</legend>
+                <div class="opcoes-grupo">
+                    <label class="item-opcao" for="windows">
+                        <input type="checkbox" name="windows" id="windows" value="windows"> Windows
+                    </label>
+                    <label class="item-opcao" for="office">
+                        <input type="checkbox" name="office" id="office" value="office"> Pacote Office
+                    </label>
+                    <label class="item-opcao" for="logica">
+                        <input type="checkbox" name="logica" id="logica" value="logica"> Lógica de Programação
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn-enviar">Solicitar Matrícula</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 TechAcademy: Escola de Inovação. Todos os direitos reservados</p>
+        <p>Rua da Tecnologia, 1010 - Centro - Guarulhos</p>
+    </footer>
+</body>
+</html>

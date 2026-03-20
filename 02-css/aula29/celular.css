@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.banner {
+    background-color: #3498db;
+    color: #fff;
+    width: 100vw;  /* Usa 100% da largura da janela do navegador */
+    height: 40vh;  /* Usa 40% da altura da janela do navegador*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    width: 90%;  /*Ocupa 90% da largura do elemento pai.*/
+    max-width: 1200px;   /* Define um limite máximo para não esticar demais em TV/Monitores ultra-wide */
+    margin: 20px auto;
+    padding: 2%;   /* Padding relativo ao tamanho da caixa */
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.caixas-flex {
+    display: flex;
+    flex-wrap: wrap;   /* Pemite a quebra de linha se o espaço acabar */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #735837;
+    padding: 20px;
+    color: #fff;
+    min-width: 250px;
+    flex: 1 1 calc(30% - 20px);  /*Cada card tenta ocupar cerca de 30% da largura*/
+}
+
+.texto p {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+

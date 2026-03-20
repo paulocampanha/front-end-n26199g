@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimeiro JavaScript</title>
+    <style>
+        #mensagem {
+            font-size: 1.5rem;
+            color: gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Acesso</h1>
+    <p id="mensagem">Status: Aguardando...</p>
+
+    <button onclick="liberarAcesso()">Liberar Entrada</button>
+
+    <!-- Código JavaScript Interno -->
+    <script>
+        // Está é uma função: um bloco de código que só executa quando
+        // a função é "chamada".
+        function liberarAcesso() {
+            // Exibir mensagem no console
+            console.log("O botão foi clicado! Iniciando script de liberação");
+
+            // Capura o paragrafo pelo ID
+            let status = document.getElementById("mensagem");
+
+            status.innerText = "Status: Acesso Liberado";
+            status.style.color = "#0000ff";
+
+        }
+    </script>
+</body>
+</html>

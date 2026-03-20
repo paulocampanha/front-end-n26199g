@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;  /*No celular, os itens ficam um abaixo do outro*/
+    gap: 20px;
+}
+
+.card {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+/* Media Query para tabletes (Telas medias)*/
+@media screen and (min-width: 600px) {
+    .galeria {
+        flex-direction: row;  /* Muda para linha */
+        flex-wrap: wrap;      /* Perqmite quebra se necessário*/
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 colunas no tablet*/
+    }
+}
+
+/* Media Query para desktop (telas grandes)*/
+@media screen and (min-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 colunas no desktop */
+        background-color: #2c3e50;  /* Muda a cor no desktop */
+    }
+}
