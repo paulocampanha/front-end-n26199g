@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Cores conforme classificação */
+.abaixo {
+    color: blue;
+}
+
+.normal {
+    color: green;
+}
+
+.sobrepeso {
+    color: orange;
+}
+
+.obesidade {
+    color: red;
+}
+
+.erro {
+    color: darkred;
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+}
