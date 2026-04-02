@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Cores</title>
+    <link rel="stylesheet" href="cores.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Escolha uma cor</h2>
+        <select id="seletorCores" onchange="mudarCor()">
+            <option value="">---Selecione---</option>
+            <option value="azul">Azul Oceano</option>
+            <option value="verde">Verde Floresta</option>
+            <option value="vermelho">Vermelho Alerta</option>
+            <option value="roxo">Roxo royal</option>
+            <option value="laranja">Laranja Vibrante</option>
+
+        </select>
+
+        <div id="caixa"></div>
+        <p id="nomeDaCor">Cor atual: Padrão</p>
+    </div>
+    <script src="cores.js"></script>
+     
+</body>
+</html>

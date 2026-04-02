@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jogo da Adivinhação</h1>
+    <p>Nesse jogo você terá três chances de acertar um número
+        entre 1 e 10. A cada resposta errada, darei uma dica 
+        para ajudar no próximo palpite.
+    </p>
+    <button onclick="iniciar()">Iniciar</button>
+    <script>
+        //A função random da bliblioteca Math gera um número 
+        // aleatorio entre 0.00 e 0.99. 
+        //A função floor() transforma o número em inteiro 
+        function iniciar(){
+            const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+            let palpite = 0;
+            let tentativas = 3;
+            while(tentativas > 0){
+                palpite = Number(prompt("Digite seu palpite:"));
+                if (palpite == numeroSecreto){
+                    alert("PARABÉNS!!! Você acertou o número secreto.");
+                    break;
+                } else if(palpite > numeroSecreto) {
+                    alert("Muito alto. Tente um número menor.");
+                } else {
+                    alert("Muito baixo. Tente um número maior.")
+                }
+                tentativas--;
+            }
+            if (tentativas <= 0) {
+                alert("PERDEU!!! O número secreto era " + numeroSecreto);
+            }
+        }
+    </script>
+</body>
+</html>
