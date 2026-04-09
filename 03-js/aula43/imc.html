@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+</head>
+<body>
+    <h1>Calculo do IMC</h1>
+    <label for="peso">Digite seu peso em quilos:</label><br>
+    <input type="number" id="peso"><br>
+
+    <label for="altura">Digite sua altura em metros:</label><br>
+    <input type="number" id="altura"><br>
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIMC() {
+            let peso = Number(document.getElementById("peso").value);
+            let altura = Number(document.getElementById("altura").value);
+            let imc = peso / (altura * altura);
+            imc = imc.toFixed(2);
+            let mensagem;
+            if (imc < 18.5) {
+                mensagem = "Seu IMC é " + imc + " e você está ABAIXO DE PESO.";
+            } else if (imc >= 18.5 && imc < 25) {
+                mensagem = "Seu IMC é " + imc + " e você está com PESO NORMAL.";
+            } else if (imc >= 25 && imc < 30) {
+                mensagem = "Seu IMC é " + imc + " e você está com SOBREPESO.";
+            } else if (imc >= 30 && imc < 35) {
+                mensagem = "Seu IMC é " + imc + " e você está com OBESIDADE GRAU I.";
+            } else if (imc >= 35 && imc < 40) {
+                mensagem = "Seu IMC é " + imc + " e você está com OBESIDADE GRAU II.";
+            } else  {
+                mensagem = "Seu IMC é " + imc + " e você está com OBESIDADE GRAU III.";
+            }
+            document.getElementById("resultado").textContent = mensagem;
+
+        }
+    </script>
+    
+</body>
+</html>
