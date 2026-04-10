@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .alerta {
+            padding: 20px;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        #monitor-solo {
+            padding: 15px;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            border-radius: 4px;
+        }
+        p {
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="alerta">Mensagem original do alerta</div>
+    <div class="alerta">Segundo alerta do sistema</div>
+
+    <p>Texto original do parágrafo quer será alterado</p>
+    <p>Outro parágrafo que o JS vai ignorar</p>
+
+    <div id="monitor-solo">Carregando status...</div>
+    <script>
+        // Seleciona apenas a primeira div que tem a classe alerta
+        const alerta = document.querySelector(".alerta");
+        alerta.innerText = "Atenção: nivel de água baixo!";
+
+        // Primeira tag que encontrar
+        const paragrafo = document.querySelector('p');
+        paragrafo.textContent = "Este é o texto alterado.";
+        paragrafo.style.fontWeight = "bold";
+
+        // Seleciona o id
+        const monitor = document.querySelector("#monitor-solo");
+        monitor.innerHTML = "<strong>Status: </strong> Solo Regado";
+    
+    </script>
+</body>
+</html>

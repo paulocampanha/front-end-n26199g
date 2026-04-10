@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de File</title>
+    <link rel="stylesheet" href="fila-espera.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Fila de Espera</h3>
+        <input type="text" id="nomePessoa" 
+            placeholder="Nome da pessoa">
+        
+        <div class="btn-group">
+            <button onclick="inserirPaciente()">Inserir Paciente</button>
+            <button onclick="atenderPaciente()">Atender Paciente</button>
+        </div>
+        <p id="exibirFila"></p>
+    </div>
+    <script src="fila-espera.js"></script>
+</body>
+</html>

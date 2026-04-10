@@ -11,12 +11,8 @@ function calcularIMC() {
         classificacao = "Peso normal";
     } else if (imc < 30) {
         classificacao = "Sobrepeso";
-    } else if (imc < 35) {
-        classificacao = "Obesidade Grau I";
-    } else if (imc < 40) {
-        classificacao = "Obesidade Grau II";
     } else {
-        classificacao = "Obesidade Grau III";
+        classificacao = "Obesidade";
     }
 
     document.getElementById("resultado").innerHTML =

@@ -1,0 +1,102 @@
+/* 1. RESET E FUNDO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* 2. CARD PRINCIPAL */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+    font-size: 1.5rem;
+}
+
+/* 3. INPUTS E CONTROLES */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #06b6d4;
+    /* Cor ciano da TechNova */
+}
+
+/* 4. BOTÕES */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Botão Chegou (Verde/Ciano) */
+button:first-of-type {
+    background-color: #06b6d4;
+    color: white;
+}
+
+button:first-of-type:hover {
+    background-color: #0891b2;
+}
+
+/* Botão Atender (Azul Escuro) */
+button:last-of-type {
+    background-color: #1e293b;
+    color: white;
+}
+
+button:last-of-type:hover {
+    background-color: #0f172a;
+}
+
+/* 5. DISPLAY DA FILA */
+#exibirFila {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #06b6d4;
+    font-weight: 500;
+    color: #475569;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
